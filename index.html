@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Endereço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consultar endereço por CEP</h1>
+        <div class="input-container">
+            Digite o CEP:<input type="text" id="cep" placeholder="Ex: 12345-678" required autofocus>
+            <button id="consultar" onclick="pesquisacep(document.getElementById('cep').value)">Consultar</button>
+        </div>
+    <div class="endereco-card">
+        <div class="carregando" id="carregando">Carregando...</div>
+        <div class="endereco" id="endereco"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
